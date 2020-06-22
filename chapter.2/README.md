@@ -8,3 +8,5 @@ clang++ -g -O3 main.cpp `llvm-config --cxxflags`
 # Run
 ./a.out
 ```
+Here is the code:  
+[Code](./main.cpp)
