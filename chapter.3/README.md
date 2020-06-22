@@ -4,9 +4,10 @@ To do this, we use the llvm-config tool to inform our makefile/command line abou
 
 ```
 # Compile
-clang++ -g -O3 toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -o toy
+clang++ -g -O3 main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -o toy
 # Run
 ./toy
 ```
 
-Here is the code:
+Here is the code:  
+[Code](./main.cpp)
