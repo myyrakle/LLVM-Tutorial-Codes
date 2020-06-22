@@ -3,7 +3,7 @@
 Does it work? Let’s give it a try. We need to compile our code, but note that the arguments to llvm-config are different to the previous chapters.
  
  ```
-$ clang++ -g -O3 toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs all` -o toy
+$ clang++ -g -O3 main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs all` -o toy
 ```
 
 Let’s run it, and define a simple average function. Press Ctrl-D when you’re done.
@@ -32,8 +32,8 @@ int main() {
 We link our program to output.o and check the result is what we expected:
 
 ```
-$ clang++ main.cpp output.o -o main
-$ ./main
+$ clang++ test.cpp output.o -o test
+$ ./test
 average of 3.0 and 4.0: 3.5
 ```
 
