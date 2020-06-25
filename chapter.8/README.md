@@ -1,3 +1,5 @@
+[한국어](./KOR.md)  
+ 
 # Putting It All Together
 
 Does it work? Let’s give it a try. We need to compile our code, but note that the arguments to llvm-config are different to the previous chapters.
