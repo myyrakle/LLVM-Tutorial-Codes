@@ -1,3 +1,5 @@
+[한국어](./KOR.md)  
+
 Here is the complete code listing for our running example, enhanced with the LLVM JIT and optimizer.  
 To build this example, use:
 
