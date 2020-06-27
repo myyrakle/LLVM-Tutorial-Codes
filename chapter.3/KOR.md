@@ -1,6 +1,6 @@
-Here is the complete code listing for our running example, enhanced with the LLVM code generator.  
-Because this uses the LLVM libraries, we need to link them in.  
-To do this, we use the llvm-config tool to inform our makefile/command line about which options to use:
+다음은 코드 생성기로 발전한 실행 예제의 전체 코드 목록입니다.  
+이건 LLVM 라이브러리를 쓰기 때문에, 직접 링크할 필요가 있어요.  
+이를 위해 llvm-config 도구를 사용해 makefile/명령행에 사용할 옵션을 알려줍니다.  
 
 ```
 # Compile
