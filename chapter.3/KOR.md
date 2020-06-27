@@ -9,5 +9,5 @@ clang++ -g -O3 main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs c
 ./toy
 ```
 
-Here is the code:  
+코드는 여기 있어요.    
 [Code](./main.cpp)
