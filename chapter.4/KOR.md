@@ -2,9 +2,9 @@
 이 예제를 빌드하려면, 아래와 같이 하면 됩니다.
 
 ```
-# Compile
+# 컴파일
 clang++ -g main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core mcjit native` -O3 -o toy
-# Run
+# 실행
 ./toy
 ```
 
