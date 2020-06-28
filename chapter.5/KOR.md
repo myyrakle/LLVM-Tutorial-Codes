@@ -1,12 +1,12 @@
-Here is the complete code listing for our running example, enhanced with the if/then/else and for expressions. 
-To build this example, use:
+다음은 if/then/else와 표현식이 추가된 우리 실행예제의 전체 코드 목록입니다.  
+빌드는 다음과 같이 할 수 있어요.
 
 ```
-# Compile
+# 컴파일
 clang++ -g main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core mcjit native` -O3 -o toy
-# Run
+# 실행
 ./toy
 ```
 
-Here is the code:  
+코드는 여기로  
 [Code](./main.cpp)
