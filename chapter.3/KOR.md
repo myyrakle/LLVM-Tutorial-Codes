@@ -3,9 +3,9 @@
 이를 위해 llvm-config 도구를 사용해 makefile/명령행에 사용할 옵션을 알려줍니다.  
 
 ```
-# Compile
+# 컴파일
 clang++ -g -O3 main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -o toy
-# Run
+# 실행
 ./toy
 ```
 
