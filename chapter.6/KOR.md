@@ -8,17 +8,10 @@ clang++ -g main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core 
 ./toy
 ```
 
-일부 플랫폼에선, 링크를 할 때 -rdynamic나 -Wl, –export-dynamic를 지정해줄 필요가 있습니다.
-This ensures that symbols defined in the main
- executable are exported to the dynamic linker
- and so are available for symbol resolution
- at run time. 
-이건 메인 실행파일에서 정의된 심볼들이 동적 링커로 배출(export)해서, 심볼 해결이 런타임에도 가능하게 해줍니다.
+일부 플랫폼에선, 링크를 할 때 -rdynamic나 -Wl, –export-dynamic를 지정해줄 필요가 있습니다.  
+이건 메인 실행파일에서 정의된 심볼들을 동적 링커로 내보내서(export), 심볼 해결이 런타임에도 가능하게 해줍니다.  
 
-This is not needed if you 
-compile your support code into a shared 
-library, although doing that will cause 
-problems on Windows.
+이건 공유 라이브러리로 코드를 컴파일할 필요가 없더라도, 하지 않으면 윈도우즈에선 문제가 발생할 수도 있습니다.  
 
 
 코드는 여기로:  
