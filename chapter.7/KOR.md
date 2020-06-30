@@ -1,12 +1,13 @@
-Here is the complete code listing for our running example, enhanced with mutable variables and var/in support.  
-To build this example, use:
+다음은 가변 변수와 var/in 지원이 추가된 실행 예제의 전체 코드 목록입니다.
+  
+빌드하려면, 이렇게 합니다.
 
 ```
-# Compile
+# 컴파일
 clang++ -g main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core mcjit native` -O3 -o toy
-# Run
+# 실행
 ./toy
 ```
 
-Here is the code:  
+코드는 여기로  
 [Code](./main.cpp)
