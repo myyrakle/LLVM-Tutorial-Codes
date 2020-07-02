@@ -1,9 +1,6 @@
 # 다 모아서 컴파일하기
 
-Does it work? 
-잘 작동하나요?
-Let’s give it a try. 
-
+잘 작동할까요? 일단 돌려봅시다.  
 
 우린 여전히 코드를 컴파일할 필요가 있지만, llvm-config로 보낼 인자가 이전 챕터와는 다릅니다.
  
@@ -21,7 +18,9 @@ ready> def average(x y) (x + y) * 0.5;
 Wrote output.o
 ```
 
-We have an object file! To test it, let’s write a simple program and link it with our output. 
+We have an object file! 
+그럼 이제 오브젝트 파일이 나왔을 겁니다!
+To test it, let’s write a simple program and link it with our output. 
 Here’s the source code:
 
 ```
