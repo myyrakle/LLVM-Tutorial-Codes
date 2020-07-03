@@ -18,10 +18,10 @@ ready> def average(x y) (x + y) * 0.5;
 Wrote output.o
 ```
 
-We have an object file! 
-그럼 이제 오브젝트 파일이 나왔을 겁니다!
-To test it, let’s write a simple program and link it with our output. 
-Here’s the source code:
+그럼 이제 오브젝트 파일이 나왔을 겁니다!   
+이걸 테스트하려면, 간단한 프로그램을 작성해서 출력물에 링크를 하면 됩니다.
+
+다음은 그 소스코드입니다.  
 
 ```
 #include <iostream>
@@ -34,13 +34,13 @@ int main() {
     std::cout << "average of 3.0 and 4.0: " << average(3.0, 4.0) << std::endl;
 }
 ```
-
-We link our program to output.o and check the result is what we expected:
-
+  
+이 프로그램을 output.o와 링크해서 그 결과가 예상대로 나오는지 확인해봅시다.
 ```
 $ clang++ test.cpp output.o -o test
 $ ./test
 average of 3.0 and 4.0: 3.5
 ```
 
+코드:  
 [Code](./main.cpp)
