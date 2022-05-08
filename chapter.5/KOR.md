@@ -2,8 +2,8 @@
 빌드는 다음과 같이 할 수 있어요.
 
 ```
-# 컴파일
-clang++ -g main.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core mcjit native` -O3 -o toy
+# 컴파일 
+clang++ -g toy.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
 # 실행
 ./toy
 ```
